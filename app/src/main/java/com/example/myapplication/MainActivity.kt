@@ -11,11 +11,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_click_me.setOnClickListener(){
-            startSec()
+            val str: String = et_just.text.toString()
+            startSec(str)
         }
     }
-    fun startSec(){
-        val intent=Intent(this,SecondAct::class.java)
+    fun startSec(str:String){
+        val intent=Intent(applicationContext,SecondAct::class.java)
+        intent.putExtra("massage",str)
         startActivity(intent)
     }
 }

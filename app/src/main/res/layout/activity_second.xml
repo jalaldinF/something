@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondAct">
-
-    <ImageView
-        android:scaleType="centerCrop"
-        android:src="@drawable/img"
+  -
+    <TextView
+        android:id="@+id/tv_just"
+        android:textSize="35sp"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
